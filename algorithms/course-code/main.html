@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Hello World!</title> 
+</head> 
+<body> 
+    <p> 
+        <!-- 
+Contenu de la page Web 
+... 
+--> 
+    </p> 
+    <script> 
+    // Un peu de code Javascript... 
+    </script> 
+    <script src="main.js"></script> 
+
+    <!---->
+    <button id='clickme1'>Algorithm Fibonaci Version 1</button> 
+    <script> 
+        var element = document.getElementById('clickme'); 
+        element.onclick = function () { 
+            fib1(200); 
+        }; 
+    </script>
+    <!---->
+    <button id='clickme2'>Algorithm Fibonaci Version 2</button> 
+    <script> 
+        var element = document.getElementById('clickme2'); 
+        element.onclick = function () { 
+            fib2(500); 
+        }; 
+    </script>
+    <!---->
+    <button id='clickme3'>Algorithm Insertion Sort</button> 
+    <script> 
+        var element = document.getElementById('clickme3');
+        element.onclick = function () {
+            let arr = [12, 11, 13, 10, 4, 0, 5, 6];
+            insertionSort(arr);
+            printArray(arr);
+        }; 
+    </script>
+    <!---->
+    <button id='clickme4'>Algorithm Merge Sort</button> 
+    <script> 
+        var element = document.getElementById('clickme4');
+        element.onclick = function () {
+            // Driver code
+            const arr = [12, 11, 13, 5, 6, 7];
+            console.log("Given array is");
+            printArray(arr);
+
+            mergeSort(arr, 0, arr.length - 1);
+
+            console.log("\nSorted array is");
+            printArray(arr);
+        }; 
+    </script>
+    <!---->
+    <button id='clickme5'>Algorithm Puiss. Dyn.</button> 
+    <script> 
+        var element = document.getElementById('clickme5');
+        element.onclick = function () {
+            PuissDyn(8, 7);
+        }; 
+    </script>
+       
+
+</body> 
+</html> 
